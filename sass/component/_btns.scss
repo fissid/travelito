@@ -1,0 +1,96 @@
+.btn {
+  &,
+  &:any-link {
+    // display: inline-block;
+    font-size: 1.9rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    text-transform: uppercase;
+  }
+  &--primary {
+    font-size: 1.7rem !important;
+    padding: 1.5rem 4.2rem;
+    background: $color-primary !important;
+    color: $color-white !important;
+
+    &:hover {
+      box-shadow: 0 0.5rem 3rem rgba($color-grey-light, 0.5);
+    }
+  }
+  &--animated {
+    animation: moveInBottom 1.5s ease-in-out 0.2s;
+    animation-fill-mode: backwards;
+  }
+  &--white {
+    padding: 2rem 4.5rem;
+    background: $color-white !important;
+    color: $color-grey-light !important;
+    &::after {
+      background: $color-white;
+    }
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0.5rem 0.1rem 0 rgba($color-grey-light, 0.5);
+      &::after {
+        transform: scaleX(1.5), scaleY(1.7);
+        opacity: 0;
+      }
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 0.3rem 0 rgba($color-grey-light, 0.2);
+    border-color: transparent !important;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10rem;
+    transition: all 0.5s;
+  }
+  &--text {
+    font-weight: 700;
+    border-bottom: 1px solid $color-primary;
+    border-radius: 0 !important;
+    color: $color-primary;
+    padding: 0.5rem;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($color-grey-light, 0.5);
+      transform: translateY(-2px);
+      background: $color-primary !important;
+      color: $color-white !important;
+    }
+    &:active {
+      background: inherit;
+      box-shadow: 0 1rem 1rem rgba($color-grey-light, 0.2);
+      transform: translateY(0);
+    }
+  }
+
+  &--text-white {
+    height: fit-content;
+    font-size: 1.4rem !important;
+    font-weight: 500;
+    border-radius: 0 !important;
+    color: $color-white;
+    padding: 0.5rem 0.7rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
+      transform: scale(1.2) skewY(10deg);
+      color: $color-primary !important;
+    }
+  }
+}
