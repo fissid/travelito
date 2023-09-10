@@ -1,0 +1,49 @@
+@mixin respond($breakpoint) {
+  // default 1em = 16px
+
+  // input of mixin as breakpoint device
+  // iphone 13 pro: 390x844 px
+  @if $breakpoint == small-phone {
+    //400px and lesser    400/16=25
+    @media (max-width: 25em) {
+      // code part that will be passed
+      @content;
+    }
+  }
+
+  // input of mixin as breakpoint device
+  @if $breakpoint == big-phone {
+    //600px and lesser    600/16=37.5
+    @media (max-width: 37.5em) {
+      // code part that will be passed
+      @content;
+    }
+  }
+
+  // input of mixin as breakpoint device
+  @if $breakpoint == tablet-port {
+    //900px and lesser    900/16=56.25
+    @media (max-width: 56.25em) {
+      // code part that will be passed
+      @content;
+    }
+  }
+
+  // input of mixin as breakpoint device
+  @if $breakpoint == tablet-land {
+    //1200px and lesser   1200/16=75
+    @media (max-width: 75em) {
+      // code part that will be passed
+      @content;
+    }
+  }
+
+  // input of mixin as breakpoint device
+  @if $breakpoint == big-desktop {
+    //1800px and higher   1800/16=112.5
+    @media (min-width: 112.5em) {
+      // code part that will be passed
+      @content;
+    }
+  }
+}
