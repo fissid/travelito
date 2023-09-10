@@ -1,0 +1,25 @@
+.popular {
+  padding: 6rem 0;
+  @include respond(tablet-port) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10rem 0;
+  }
+  &__body {
+    // background: #000;
+    height: 60rem;
+    @include respond(tablet-port) {
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: first baseline !important;
+      // height: 100vh;
+      padding: 3rem 0;
+      height: 250rem;
+      margin-top: -60rem;
+    }
+  }
+  &__footer {
+    margin-top: 0 !important;
+  }
+}
