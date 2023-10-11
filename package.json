@@ -1,0 +1,19 @@
+{
+  "name": "natoursbootstrapversion",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "FissiD",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "parcel": "^2.9.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3"
+  }
+}
