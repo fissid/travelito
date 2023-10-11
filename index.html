@@ -58,7 +58,7 @@
             <h2 class="heading--animated mb-3">exciting tours for adventurous people</h2>
           </div>
           <div class="about__body row w-100 p-5 mt-5">
-            <div class="about__body--left p-5 col">
+            <div class="about__body--left p-5 col-12 col-md">
               <div>
                 <h3 class="about__body--left-header">YOU'RE GOING TO FALL IN LOVE WITH NATURE</h3>
                 <p class="about__body--left-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis asperiores officia, voluptatem accusamus at sint impedit quos pariatur culpa.</p>
@@ -71,7 +71,7 @@
                 <a href="#" class="btn btn--text">Learn more &rarr;</a>
               </div>
             </div>
-            <div class="about__body--right p-5 col">
+            <div class="about__body--right p-5 col-12 col-md">
               <img src="./img/nat-1-large.jpg" alt="" class="about__body--right-photo photo-1" />
               <img src="./img/nat-2-large.jpg" alt="" class="about__body--right-photo photo-2" />
               <img src="./img/nat-3-large.jpg" alt="" class="about__body--right-photo photo-3" />
@@ -114,7 +114,7 @@
           <div class="popular__header text-uppercase">
             <h2 class="poplular--animated mb-3">MOST POPULAR TOURS</h2>
           </div>
-          <div class="popular__body d-flex justify-content-evenly w-100 p-5 mt-5">
+          <div class="popular__body d-flex justify-content-evenly w-100 p-5">
             <div class="popular__body--card">
               <div class="card--side card--side--front display-4">
                 <div class="card">
@@ -273,7 +273,10 @@
         </section>
         <section class="footer d-flex flex-column align-items-center justify-content-center">
           <div class="footer__logo d-flex justify-content-center">
-            <img src="./img/logo-green-1x.png" alt="logo" class="footer_logo--img" />
+            <picture class="footer_logo--img">
+              <source media="(max-width: 37.5em)" srcset="./img/logo-green-small-1x.png 1x, ./img/logo-green-small-2x.png 2x" />
+              <img srcset="./img/logo-green-1x.png 1x, ./img-logo-green-2x.png 2x" alt="logo" />
+            </picture>
           </div>
           <div class="footer__body w-100 d-flex justify-content-around">
             <div class="footer__body--left text-uppercase d-flex border-top">
